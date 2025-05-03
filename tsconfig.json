@@ -18,30 +18,21 @@
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "libs/auth": [
+      "@laughspace/auth": [
         "libs/auth/src"
       ],
-      "libs/auth/*": [
-        "libs/auth/src/*"
-      ],
-      "libs/common": [
+      "@laughspace/common": [
         "libs/common/src"
       ],
-      "libs/common/*": [
-        "libs/common/src/*"
-      ],
-      "libs/config": [
+      "@laughspace/config": [
         "libs/config/src"
       ],
-      "libs/config/*": [
-        "libs/config/src/*"
-      ],
-      "libs/db": [
+      "@laughspace/db": [
         "libs/db/src"
       ],
-      "libs/db/*": [
-        "libs/db/src/*"
-      ]
+      "@laughspace/user": [
+        "libs/user/src"
+      ],
     }
   }
 }
