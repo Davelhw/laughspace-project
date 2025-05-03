@@ -1,0 +1,65 @@
+.
+├── apps
+│   ├── laughspace-app
+│   │   ├── src
+│   │   │   ├── laughspace-app.controller.spec.ts
+│   │   │   ├── laughspace-app.controller.ts
+│   │   │   ├── laughspace-app.module.ts
+│   │   │   ├── laughspace-app.service.ts
+│   │   │   └── main.ts
+│   │   ├── test
+│   │   │   ├── app.e2e-spec.ts
+│   │   │   └── jest-e2e.json
+│   │   └── tsconfig.app.json
+│   └── laughspace-project
+│       ├── src
+│       │   ├── app.controller.spec.ts
+│       │   ├── app.controller.ts
+│       │   ├── app.module.ts
+│       │   ├── app.service.ts
+│       │   └── main.ts
+│       ├── test
+│       │   ├── app.e2e-spec.ts
+│       │   └── jest-e2e.json
+│       └── tsconfig.app.json
+├── eslint.config.mjs
+├── .gitignore
+├── libs
+│   ├── auth
+│   │   ├── src
+│   │   │   ├── auth.module.ts
+│   │   │   ├── auth.service.spec.ts
+│   │   │   ├── auth.service.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.lib.json
+│   ├── common
+│   │   ├── src
+│   │   │   ├── common.module.ts
+│   │   │   ├── common.service.spec.ts
+│   │   │   ├── common.service.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.lib.json
+│   ├── config
+│   │   ├── src
+│   │   │   ├── config.module.ts
+│   │   │   ├── config.service.spec.ts
+│   │   │   ├── config.service.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.lib.json
+│   └── db
+│       ├── src
+│       │   ├── db.module.ts
+│       │   ├── db.service.spec.ts
+│       │   ├── db.service.ts
+│       │   └── index.ts
+│       └── tsconfig.lib.json
+├── nest-cli.json
+├── package.json
+├── package-lock.json
+├── .prettierrc
+├── README.md
+├── structure.txt
+├── tsconfig.build.json
+└── tsconfig.json
+
+17 directories, 46 files
