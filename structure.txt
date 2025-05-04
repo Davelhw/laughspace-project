@@ -2,11 +2,11 @@
 ├── apps
 │   ├── laughspace-app
 │   │   ├── src
-│   │   │   ├── laughspace-app.controller.spec.ts
 │   │   │   ├── laughspace-app.controller.ts
 │   │   │   ├── laughspace-app.module.ts
 │   │   │   ├── laughspace-app.service.ts
-│   │   │   └── main.ts
+│   │   │   ├── main.ts
+│   │   │   └── modules
 │   │   ├── test
 │   │   │   ├── app.e2e-spec.ts
 │   │   │   └── jest-e2e.json
@@ -22,15 +22,23 @@
 │       │   ├── app.e2e-spec.ts
 │       │   └── jest-e2e.json
 │       └── tsconfig.app.json
+├── .env
 ├── eslint.config.mjs
 ├── .gitignore
 ├── libs
 │   ├── auth
 │   │   ├── src
+│   │   │   ├── auth.controller.ts
 │   │   │   ├── auth.module.ts
-│   │   │   ├── auth.service.spec.ts
 │   │   │   ├── auth.service.ts
-│   │   │   └── index.ts
+│   │   │   ├── dto
+│   │   │   │   └── login.dto.ts
+│   │   │   ├── guards
+│   │   │   │   └── jwt.guard.ts
+│   │   │   ├── index.ts
+│   │   │   └── strategies
+│   │   │       ├── jwt.constants.ts
+│   │   │       └── jwt.strategy.ts
 │   │   └── tsconfig.lib.json
 │   ├── common
 │   │   ├── src
@@ -42,16 +50,27 @@
 │   ├── config
 │   │   ├── src
 │   │   │   ├── config.module.ts
-│   │   │   ├── config.service.spec.ts
 │   │   │   ├── config.service.ts
+│   │   │   ├── env.config.ts
 │   │   │   └── index.ts
 │   │   └── tsconfig.lib.json
-│   └── db
+│   ├── db
+│   │   ├── src
+│   │   │   ├── db.module.ts
+│   │   │   ├── db.service.spec.ts
+│   │   │   ├── db.service.ts
+│   │   │   ├── index.ts
+│   │   │   └── schemas
+│   │   │       └── user.schema.ts
+│   │   └── tsconfig.lib.json
+│   └── user
 │       ├── src
-│       │   ├── db.module.ts
-│       │   ├── db.service.spec.ts
-│       │   ├── db.service.ts
-│       │   └── index.ts
+│       │   ├── dto
+│       │   │   └── create-user.dto.ts
+│       │   ├── index.ts
+│       │   ├── user.controller.ts
+│       │   ├── user.module.ts
+│       │   └── user.service.ts
 │       └── tsconfig.lib.json
 ├── nest-cli.json
 ├── package.json
@@ -62,4 +81,4 @@
 ├── tsconfig.build.json
 └── tsconfig.json
 
-17 directories, 46 files
+25 directories, 57 files
