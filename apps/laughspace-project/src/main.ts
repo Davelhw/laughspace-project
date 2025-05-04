@@ -1,11 +1,14 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { setupSwagger } from '@laughspace/common'; // adjust path as needed
+import { setupSwagger } from '@laughspace/common';
+import * as dotenv from 'dotenv';
+
+dotenv.config(); // load .env
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.setGlobalPrefix('api/v1');
 
-  app.setGlobalPrefix('api/v1'); // Prefixes all routes
   setupSwagger(app, {
     title: 'Laughnya Admin API',
     description: 'Admin & internal API',
@@ -14,12 +17,9 @@ async function bootstrap() {
     tag: 'admin',
   });
 
-  await app.listen(process.env.BE_PORT ?? 3000);
+  const port = parseInt(process.env.BE_PORT || '3000', 10);
+  await app.listen(port);
+  console.log(`✅ Backend running at http://localhost:${port}`);
+  console.log(`📘 Swagger (admin): http://localhost:${port}/api-docs/admin`);
 }
 bootstrap();
-
-
-
-
-
-

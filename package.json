@@ -8,6 +8,10 @@
   "scripts": {
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/apps/laughspace-project/main",
     "start:be": "nest start apps/laughspace-project",
     "start:fe": "nest start apps/laughspace-app",
     "start:be:dev": "nest start --watch apps/laughspace-project",

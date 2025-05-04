@@ -22,6 +22,10 @@
 │       │   ├── app.e2e-spec.ts
 │       │   └── jest-e2e.json
 │       └── tsconfig.app.json
+├── dist
+│   └── apps
+│       └── laughspace-project
+│           └── main.js
 ├── .env
 ├── eslint.config.mjs
 ├── .gitignore
@@ -43,9 +47,9 @@
 │   ├── common
 │   │   ├── src
 │   │   │   ├── common.module.ts
-│   │   │   ├── common.service.spec.ts
 │   │   │   ├── common.service.ts
-│   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   └── swagger.ts
 │   │   └── tsconfig.lib.json
 │   ├── config
 │   │   ├── src
@@ -81,4 +85,4 @@
 ├── tsconfig.build.json
 └── tsconfig.json
 
-25 directories, 57 files
+28 directories, 58 files
