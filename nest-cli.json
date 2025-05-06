@@ -10,6 +10,24 @@
   "monorepo": true,
   "root": "apps/laughspace-project",
   "projects": {
+    "laughspace-app": {
+      "type": "application",
+      "root": "apps/laughspace-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/laughspace-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/laughspace-app/tsconfig.app.json"
+      }
+    },
+    "laughspace-project": {
+      "type": "application",
+      "root": "apps/laughspace-project",
+      "entryFile": "main",
+      "sourceRoot": "apps/laughspace-project/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/laughspace-project/tsconfig.app.json"
+      }
+    },
     "auth": {
       "type": "library",
       "root": "libs/auth",
@@ -44,24 +62,6 @@
       "sourceRoot": "libs/db/src",
       "compilerOptions": {
         "tsConfigPath": "libs/db/tsconfig.lib.json"
-      }
-    },
-    "laughspace-app": {
-      "type": "application",
-      "root": "apps/laughspace-app",
-      "entryFile": "main",
-      "sourceRoot": "apps/laughspace-app/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/laughspace-app/tsconfig.app.json"
-      }
-    },
-    "laughspace-project": {
-      "type": "application",
-      "root": "apps/laughspace-project",
-      "entryFile": "main",
-      "sourceRoot": "apps/laughspace-project/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/laughspace-project/tsconfig.app.json"
       }
     },
     "user": {

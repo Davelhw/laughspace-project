@@ -4,6 +4,7 @@ import { LaughspaceAppService } from './laughspace-app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { DbModule } from '@laughspace/db';
 import { UserModule } from '@laughspace/user';
+import { PingController } from './ping.controller';
 
 @Module({
   imports: [
@@ -11,7 +12,7 @@ import { UserModule } from '@laughspace/user';
     DbModule,
     UserModule,
   ],
-  controllers: [LaughspaceAppController],
+  controllers: [LaughspaceAppController, PingController],
   providers: [LaughspaceAppService],
 })
 export class LaughspaceAppModule {}
